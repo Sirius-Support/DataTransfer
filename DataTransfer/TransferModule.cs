@@ -35,7 +35,7 @@ namespace DataTransfer
         private void initializeTimer()
         {
             timer = new Timer();
-            timer.Interval = setting.DATA_TRANSFER_CYCLE * 1000;/* ///// * 60; */
+            timer.Interval = setting.DATA_TRANSFER_CYCLE * 1000 * 60;
             timer.Elapsed += Timer_Tick;            
         }
         private async void Timer_Tick(object sender, EventArgs e)
